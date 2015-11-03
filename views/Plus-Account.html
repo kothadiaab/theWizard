@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Wizard</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+
+<div class="container">
+
+
+  <a href="#Light">  <button class="btn btn-danger btn-lg" type="submit">Opt out of plus account</button></a>
+      <a href="#summary"><button class="btn btn-success btn-lg" type="submit">Summary</button></a>
+    <h2>Dear Sir/Mam,In order to be "Premium account" user please opt for more than 4 products </h2>
+        <form role="form">
+        <label class="checkbox">
+            <input type="checkbox" ng-click = "plusVm.updateCheckCount()" value="">Health Insurance
+        </label>
+        <label class="checkbox">
+            <input type="checkbox"  ng-click = "plusVm.updateCheckCount()" value="">Auto Insurance
+        </label>
+        <label class="checkbox">
+            <input type="checkbox"  ng-click= "plusVm.updateCheckCount()" value="">Medical 50/50 Insurance
+        </label>
+        <label class="checkbox">
+             <input type="checkbox"  ng-click= "plusVm.updateCheckCount()" value="">Travel Insurance
+           </label>
+        <label class="checkbox">
+                <input type="checkbox"  ng-click= "plusVm.updateCheckCount()" value="">Family Insurance
+            </label>
+        <label class="checkbox">
+                <input type="checkbox"  ng-click= "plusVm.updateCheckCount()" value="">Property Insurance
+            </label>
+    </form>
+
+
+   <a href ="#summary"> <button class="btn btn-success" type="submit">Confirm</button></a>
+    <div ng-if="plusVm.count > 3">
+        <a href="#premium"> <button class="btn btn-info" type="submit">Continue and opt for premium account</button></a>
+    </div>
+</div>
+
+
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

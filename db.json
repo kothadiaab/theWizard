@@ -1,0 +1,36 @@
+{
+  "wizard": [
+    {
+      "username": "sanikago",
+      "firstname": "Sanika",
+      "lastname": "Golash",
+      "email": "sanika@gmail.com",
+      "accounttype": ""
+    },
+    {
+      "username": "admin",
+      "firstname": "Admin",
+      "lastname": "Department",
+      "email": "admin@gmail.com",
+      "accounttype": ""
+    },
+    {
+      "username": "user",
+      "firstname": "James",
+      "lastname": "Hook",
+      "email": "james@gmail.com",
+      "accounttype": ""
+    },
+    {
+      "username": "akshaygo",
+      "firstname": "Akshay",
+      "lastname": "Golash",
+      "email": "akshay@gmail.com",
+      "accounttype": ""
+    }
+  ]
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 6c62e7b421cd51cabef8da80bbb79251886adb80

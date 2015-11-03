@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <title>The Wizard</title>
+</head>
+<body>
+
+<div class="container">
+<div ng-repeat="p in lightVm.userdata">
+    <h1>Welcome</h1><h1> {{p.firstname}}!</h1>
+
+
+    <li>User Name : <label>{{p.username}}</label></li>
+    <li>First Name :<label>{{p.firstname}}</label></li>
+    <li>Last Name : <label>{{p.lastname}}</label></li>
+    <li>Email Id : <label>{{p.email}}</label></li>
+    <li>Account Type : <label>{{p.accountype}}</label></li>
+</div>
+
+<a href="#summary"> <button class="btn btn-success" type="submit" ng-click="lightVm.updateAccountType">Confirm or Create Light account only</button></a>
+<a href="#standard"> <button class="btn btn-info" type="submit">Confirm details and opt in for plus</button></a>
+ </div>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

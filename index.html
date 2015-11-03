@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app" xmlns:style.display="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+
+    <title>The Wizard</title>
+</head>
+<body>
+<header>
+    <div data-ng-controller="MainController as mc">
+
+        <div class="container">
+            <div class="col-md-4 col-md-offset-4">
+                <form role="form" id="1">
+                    <label>Please enter your user name</label><br>
+                    <input type="text" data-ng-model="mc.reqObj.username"placeholder="Enter your user name " required/>
+                    <a href="#Light"><input type="submit" onclick="document.getElementById(1).style.display='none'" class="btn btn-success" value="Submit" name="submit"/></a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section ng-view>
+
+
+</section>
+<footer>-Developed by Akshay Golash</footer>
+<script src = "script/angular.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="script/angular-route-min.js"></script>
+<script src="app.js"></script>
+<script src="controllers/MainController.js"> </script>
+<script src = "controllers/LightAccountController.js"></script>
+<script src = "controllers/SummaryController.js"></script>
+<script src="controllers/StandardAccountController.js"></script>
+<script src ="controllers/PlusAccountController.js"></script>
+<script src ="controllers/PremiumAccountController.js"></script>
+
+</body>
+</html>
+
+<!--http://localhost:3000/wizard-->
